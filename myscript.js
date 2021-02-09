@@ -1,14 +1,107 @@
-var quotes =["I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-"Be yourself; everyone else is already taken.",
-"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe",
-"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
-"We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.",
-"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart"];
+
 function Generate(){
 
-  var max= quotes.length;
-  var randomIndex = Math.floor(Math.random(0,max)*4);
-  console.log(randomIndex);
-  document.querySelector("p").innerHTML ='"'+ quotes[randomIndex]+'"';
+  var max= newQuotes.length;
+  // console.log(max);
+  var randomIndex = Math.floor(Math.random()*max);
+  // console.log(randomIndex);
+  // console.log(newQuotes[randomIndex].quote);
+  document.querySelector("p").innerHTML ='"'+newQuotes[randomIndex].quote+'"';
+  document.querySelector(".cite").innerHTML="-"+newQuotes[randomIndex].cite;
 
 }
+
+var newQuotes =[
+    {
+      "quote": "One of my most productive days was throwing away 1,000 lines of code.",
+      "cite": "Ken Thompson"
+    },
+    {
+      "quote": "I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.",
+      "cite": "Bjarne Stroustrup"
+    },
+    {
+      "quote": "When in doubt, use brute force.",
+      "cite": "Ken Thompson"
+    },
+    {
+      "quote": "Talk is cheap. Show me the code.",
+      "cite": "Linus Torvalds"
+    },
+    {
+      "quote": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
+      "cite": "Martin Golding"
+    },
+    {
+      "quote": "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
+      "cite": "Linus Torvalds"
+    },
+    {
+      "quote": "Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.",
+      "cite": "Alan Kay"
+    },
+    {
+      "quote": "Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris",
+      "cite": "Larry Wall"
+    },
+    {
+      "quote": "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.",
+      "cite": "George Carrette"
+    },
+    {
+      "quote": "I don't care if it works on your machine! We are not shipping your machine!",
+      "cite": "Vidiu Platon"
+    },
+    {
+      "quote": "Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.",
+      "cite": "Eric S. Raymond"
+    },
+    {
+      "quote": "When someone says: 'I want a programming language in which I need only say what I wish done', give him a lollipop.",
+      "cite": "Alan J. Perlis"
+    },
+    {
+      "quote": "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code.",
+      "cite": "Christopher Thompson"
+    },
+    {
+      "quote": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+      "cite": "Brian W. Kernighan"
+    },
+    {
+      "quote": "People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.",
+      "cite": "Donald Knuth"
+    },
+    {
+      "quote": "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
+      "cite": "Edsger Dijkstra"
+    },
+    {
+      "quote": " Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+      "cite": "Martin Fowler"
+    },
+    {
+      "quote": "Programs must be written for people to read, and only incidentally for machines to execute",
+      "cite": "Abelson / Sussman"
+    },
+    {
+      "quote": "When debugging, novices insert corrective code; experts remove defective code.",
+      "cite": "Richard Pattis"
+    },
+    {
+      "quote": "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.",
+      "cite": "Leon Bambrick"
+    },
+    {
+      "quote": "There are only two kinds of languages: the ones people complain about and the ones nobody uses",
+      "cite": "Bjarne Stroustrup"
+    },
+    {
+      "quote": "It's all talk until the code runs.",
+      "cite": "Ward Cunningham"
+    },
+    {
+      "quote": "One man’s crappy software is another man’s full time job",
+      "cite": "Jessica Gaston"
+    }
+  ];
