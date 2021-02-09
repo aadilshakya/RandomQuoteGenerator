@@ -4,8 +4,10 @@ button{
   height: 85.29px;
   left: 150px;
   top: 550px;
-  border-radius: 15px;
+  border-radius: 20px !important;
   font-family: Rubik;
+  background: rgba(245, 56, 56, 0.35);
+  /* filter: blur(54px); */
 }
 
 h1{
