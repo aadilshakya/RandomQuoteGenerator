@@ -3,7 +3,8 @@
 
 ### Screenshot:
    
-![](https://user-images.githubusercontent.com/28466502/107355796-131c7d80-6af8-11eb-90ee-1b16d3a0ca02.png)
+![](https://user-images.githubusercontent.com/28466502/107359096-5e388f80-6afc-11eb-9590-3dfcb0dead31.png)
+
 
 
 ## [Live Demo](https://aadilshakya.github.io/RandomQuoteGenerator/)
