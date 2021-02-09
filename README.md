@@ -1,4 +1,4 @@
-# Random Quote Generator (Developer Mode)
+# Random Quote Generator for Developers
 
 
 ### Screenshot:
