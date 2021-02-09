@@ -2,10 +2,7 @@
 function Generate(){
 
   var max= newQuotes.length;
-  // console.log(max);
   var randomIndex = Math.floor(Math.random()*max);
-  // console.log(randomIndex);
-  // console.log(newQuotes[randomIndex].quote);
   document.querySelector("p").innerHTML ='"'+newQuotes[randomIndex].quote+'"';
   document.querySelector(".cite").innerHTML="-"+newQuotes[randomIndex].cite;
 
