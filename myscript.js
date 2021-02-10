@@ -94,7 +94,7 @@ var newQuotes =[
   }
 ];
 
-fetch('http://quotes.rest/qod')
+fetch('https://quotes.rest/qod')
   .then(response => {
     console.log({response});
 
