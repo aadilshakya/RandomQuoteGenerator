@@ -1,4 +1,19 @@
 
+function QOD(){
+
+  fetch('http://quotes.rest/qod')
+    .then(response => {
+      console.log({response});
+
+      return response.json()   //conversion to json
+    }).then(data => {
+        console.log('Data',data.contents.quotes[0].quote);
+        document.getElementById("QOD").textContent=data.contents.quotes[0].quote;
+    })
+
+}
+QOD();
+
 function Generate(){
 
   var max= newQuotes.length;
@@ -7,6 +22,8 @@ function Generate(){
   document.querySelector(".cite").innerHTML="-"+newQuotes[randomIndex].cite;
 
 }
+
+
 
 var newQuotes =[
     {
