@@ -3,18 +3,20 @@
 
 ### Screenshot:
    
-![](https://user-images.githubusercontent.com/28466502/107359096-5e388f80-6afc-11eb-9590-3dfcb0dead31.png)
-
+![](https://user-images.githubusercontent.com/28466502/107511634-d753e780-6bcd-11eb-95fa-ba778d552c83.png)
 
 
 ## [Live Demo](https://aadilshakya.github.io/RandomQuoteGenerator/)
 
 ## Built With
 
-* [HTML5](https://devdocs.io/html/)
-* [CSS](https://devdocs.io/css/)
-* [JS](https://devdocs.io/javascript/)
+* [HTML5](https://devdocs.io/html)
+* [CSS](https://devdocs.io/css)
+* [JS](https://devdocs.io/javascript)
 
+## APIs Used
+
+* [theysaidso](https://theysaidso.com/api)
 
 ## Authors
 

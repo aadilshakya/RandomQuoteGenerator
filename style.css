@@ -79,7 +79,7 @@ button{
   font-family: Rubik;
   font-size: 19px !important;
   background: rgba(245, 56, 56, 0.35);
-  /* filter: blur(54px); */
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 70%);
 }
 
 .QOD-container{
