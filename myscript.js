@@ -1,4 +1,3 @@
-
 function Generate(){
 
   var max= newQuotes.length;
@@ -6,8 +5,24 @@ function Generate(){
   var randomIndex = Math.floor(Math.random()*max);
   // console.log(randomIndex);
   // console.log(newQuotes[randomIndex].quote);
-  document.querySelector("p").innerHTML ='"'+newQuotes[randomIndex].quote+'"';
-  document.querySelector(".cite").innerHTML="-"+newQuotes[randomIndex].cite;
+
+  fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    var maxIndices = data.length;
+    var randomIndex1 = Math.floor(Math.random()*maxIndices);
+    console.log(randomIndex1);
+    document.querySelector("p").innerHTML ='"'+data[randomIndex1].text+'"';
+    document.querySelector(".cite").innerHTML="-"+data[randomIndex1].author;
+    console.log(data[randomIndex1].author);
+
+  });
+
+
+  // document.querySelector("p").innerHTML ='"'+newQuotes[randomIndex].quote+'"';
+  // document.querySelector(".cite").innerHTML="-"+newQuotes[randomIndex].cite;
 
 }
 
