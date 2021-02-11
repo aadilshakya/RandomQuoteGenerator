@@ -17,6 +17,7 @@
 ## APIs Used
 
 * [theysaidso](https://theysaidso.com/api)
+* [type-fit](https://type.fit/api/quotes)
 
 ## Authors
 
