@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Quotes from './Quotes/Quotes';
+import imge from './img/developer.png';
+import imge2 from './img/developer2.png';
+import ImageComponent from './Quotes/ImageComponent';
 import './App.css';
 
 const App = (props) => {
@@ -37,9 +40,11 @@ const App = (props) => {
   return (
     <div className="App">
       <h1>Random Quote generator</h1>
-      <Quotes quotation={quoteHolder} author={authorHolder}/>
+      <Quotes  quotation={quoteHolder} author={authorHolder}/>
       {/* <Quotes quotation={this.state.quotes[0].quote}/> */}
-      <button onClick={generateQuotesHandler}>Generate Quotes</button>
+      <ImageComponent source={imge}/>
+      {/* <ImageComponent source={imge2}/> */}
+      <button className="btn btn-danger" onClick={generateQuotesHandler}>Generate Quotes</button>
     </div>
   );
   }
